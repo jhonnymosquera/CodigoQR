@@ -1,0 +1,83 @@
+/* variables */
+:root {
+	--blanco: #ffffff;
+	--negro: #22334b;
+	--fondo-body: #d4e0ee;
+	--gris: #90949b;
+}
+
+/*Base*/
+html {
+	font-size: 6.25%; /*  1rem = 1px */
+	box-sizing: border-box; /*hack para box mnodel*/
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit; /*hack para box mnodel*/
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16rem; /*  1rem = 1px */
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--fondo-body);
+	line-height: 1.4;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+/*Global*/
+
+.contenedor {
+	width: min(90%, 1200rem);
+	margin: 0 auto;
+}
+
+.QR {
+	display: flex;
+	justify-content: center;
+	padding-top: 40rem;
+}
+
+.QR__card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 20rem;
+	padding: 15rem;
+	background-color: var(--blanco);
+	text-align: center;
+}
+
+@media (min-width: 480px) {
+	.QR__card {
+		width: 348rem;
+	}
+}
+
+.QR__img {
+	border-radius: 10px;
+}
+
+.QR__descripcion {
+	width: 90%;
+	margin: 20rem 0;
+}
+
+.QR__descripcion--h2 {
+	font-size: 22rem;
+	margin-bottom: 20rem;
+	color: var(--negro);
+}
+
+.QR__descripcion--p {
+	color: var(--gris);
+}
